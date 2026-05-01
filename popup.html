@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <img src="super-enhanced-icon.png" alt="Key Spammer" class="logo-icon">
+
+    <div class="field">
+      <label for="key">Key to press:</label>
+      <input type="text" id="key" maxlength="5" placeholder="e.g. L" value="L">
+    </div>
+
+    <div class="field">
+      <label for="count">Press count:</label>
+      <input type="number" id="count" min="1" value="1000">
+    </div>
+
+    <!-- Minimum delay now strictly 230 ms -->
+    <div class="field">
+      <label for="delay">Delay (ms):</label>
+      <input type="number" id="delay" min="230" value="230">
+    </div>
+
+    <div class="field">
+      <label for="urlFilter">Only on URL containing:</label>
+      <div class="url-row">
+        <input type="text" id="urlFilter" placeholder="e.g. tiktok.com">
+        <button id="useUrlBtn" title="Use current tab URL">Use URL</button>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">Start</button>
+      <button id="stopBtn" disabled>Stop</button>
+    </div>
+
+    <div id="status" class="status">Stopped</div>
+    <div id="remaining" class="info"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

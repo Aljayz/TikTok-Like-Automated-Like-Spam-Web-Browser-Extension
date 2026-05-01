@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 300px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  padding: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 4px;
+  color: #cba6f7;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+label {
+  font-size: 12px;
+  color: #a6adc8;
+}
+
+input {
+  background: #313244;
+  border: 1px solid #45475a;
+  border-radius: 6px;
+  padding: 6px 8px;
+  color: #cdd6f4;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #cba6f7;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  background: #45475a;
+  color: #cdd6f4;
+  transition: background 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background: #585b70;
+}
+
+#startBtn {
+  background: #a6e3a1;
+  color: #1e1e2e;
+}
+#startBtn:hover:not(:disabled) {
+  background: #94e2d5;
+}
+
+#stopBtn {
+  background: #f38ba8;
+  color: #1e1e2e;
+}
+#stopBtn:hover:not(:disabled) {
+  background: #eba0ac;
+}
+
+.status {
+  font-weight: bold;
+  text-align: center;
+  padding: 4px;
+  border-radius: 4px;
+  background: #313244;
+}
+.status.running {
+  color: #a6e3a1;
+}
+.status.stopped {
+  color: #f38ba8;
+}
+.status.error {
+  color: #fab387;
+}
+
+.info {
+  text-align: center;
+  font-size: 12px;
+  color: #a6adc8;
+}
+
+.url-row {
+  display: flex;
+  gap: 4px;
+}
+.url-row input {
+  flex: 1;
+}
+.url-row button {
+  flex: none;
+  padding: 6px 10px;
+  background: #45475a;
+  color: #cdd6f4;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.url-row button:hover {
+  background: #585b70;
+}
+.logo-icon {
+  width: 128px;
+  height: 128px;
+  display: block;
+  margin: 0 auto 8px;
+}
