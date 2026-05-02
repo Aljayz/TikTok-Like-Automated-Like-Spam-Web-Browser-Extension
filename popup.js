@@ -1,6 +1,5 @@
-// Default values – now 1000 presses, key 'L' (always uppercase)
 const defaults = {
-  key: 'L',          // <-- changed from 'l'
+  key: 'L',       
   count: 1000,
   delay: 230,
   urlFilter: ''
